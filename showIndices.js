@@ -8,9 +8,8 @@ function showIndices() {
     } else {
       var indices = [];
       myObject[str[j]] = indices;
-      var letterToIndex = str[j];
       for (var i = 0; i < str.length; i++) {
-        if (str[i] == letterToIndex)
+        if (str[i] == str[j])
           indices.push(i);
       }
     }
